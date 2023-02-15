@@ -3,7 +3,6 @@ package GuessTheNumberGame;
 public class GuessGame {
     int minNumber;
     int maxNumber;
-
     private int randomNumber;
 
     public int getMinNumber() {

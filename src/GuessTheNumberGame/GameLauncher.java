@@ -18,11 +18,11 @@ public class GameLauncher {
         Player player = new Player();
         player.NumberOfPlayers(3);
         System.out.println("The number of players is: " + player.getNumberOfPlayers());
-        System.out.println("Please insert the number for Player1:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
+        System.out.println("Please insert the number for Player1:\nThe number must be between " + guessGame.getMinNumber() + " and " + guessGame.getMaxNumber());
         player.player1Choice(scanner.nextInt());
-        System.out.println("Please insert the number for Player2:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
+        System.out.println("Please insert the number for Player2:\nThe number must be between " + guessGame.getMinNumber() + " and " + guessGame.getMaxNumber());
         player.player2Choice(scanner.nextInt());
-        System.out.println("Please insert the number for Player3:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
+        System.out.println("Please insert the number for Player3:\nThe number must be between " + guessGame.getMinNumber() + " and " + guessGame.getMaxNumber());
         player.player3Choice(scanner.nextInt());
         System.out.println("The given random number is: " + guessGame.getRandomNumber(guessGame.getMinNumber(), guessGame.getMaxNumber()));
         System.out.printf("Player1 chose number \"%d\"", player.getPlayer1Choice()).println();

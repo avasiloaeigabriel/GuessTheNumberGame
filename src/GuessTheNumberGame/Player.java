@@ -7,6 +7,7 @@ public class Player {
     private int player2Choice;
     private int player3Choice;
 
+
     public int getNumberOfPlayers() {
         return numberOfPlayers;
     }
