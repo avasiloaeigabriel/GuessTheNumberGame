@@ -13,16 +13,18 @@ public class GameLauncher {
 
         Scanner scanner = new Scanner(System.in);
         GuessGame guessGame = new GuessGame();
+        guessGame.setMinNumber(0);
+        guessGame.setMaxNumber(5);
         Player player = new Player();
         player.NumberOfPlayers(3);
         System.out.println("The number of players is: " + player.getNumberOfPlayers());
-        System.out.println("Please insert the number for Player1:");
+        System.out.println("Please insert the number for Player1:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
         player.player1Choice(scanner.nextInt());
-        System.out.println("Please insert the number for Player2:");
+        System.out.println("Please insert the number for Player2:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
         player.player2Choice(scanner.nextInt());
-        System.out.println("Please insert the number for Player3:");
+        System.out.println("Please insert the number for Player3:\nThe number must be between "+guessGame.getMinNumber()+" and " +guessGame.getMaxNumber());
         player.player3Choice(scanner.nextInt());
-        System.out.println("The given random number is: " + guessGame.getRandomNumber(0, 5));
+        System.out.println("The given random number is: " + guessGame.getRandomNumber(guessGame.getMinNumber(), guessGame.getMaxNumber()));
         System.out.printf("Player1 chose number \"%d\"", player.getPlayer1Choice()).println();
         System.out.printf("Player2 chose number \"%d\"", player.getPlayer2Choice()).println();
         System.out.printf("Player3 chose number \"%d\"", player.getPlayer3Choice()).println();
