@@ -1,16 +1,48 @@
 package petShopSimulator;
 
+import java.util.Scanner;
+
 public class PetShopActions {
 
     Animals animals = new Animals();
     private int quantity;
     private String userAnswerAnimalKind;
 
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public int setQuantity(int quantity) {
+        Scanner scanner = new Scanner(System.in);
+        quantity = scanner.nextInt();
+        this.quantity = quantity;
+        return quantity;
+    }
+
+
     public int buyDog(int quantity) {
         this.quantity = quantity;
         int remainingDogs = animals.getDogs() - quantity;
-        //System.out.println("Sorry, we have only have " + animals.getDogs() + " remaining");
         return remainingDogs;
+    }
+
+    public int buyCat(int quantity) {
+        this.quantity = quantity;
+        int remainingCats = animals.getCats() - quantity;
+        return remainingCats;
+    }
+
+    public int buyRabbit(int quantity) {
+        this.quantity = quantity;
+        int remainingRabbits = animals.getRabbits() - quantity;
+        return remainingRabbits;
+    }
+
+    public int buyIguana(int quantity) {
+        this.quantity = quantity;
+        int remainingIguanas = animals.getIguanas() - quantity;
+        return remainingIguanas;
     }
 
     public String getUserAnswerAnimalKind() {
@@ -31,5 +63,7 @@ public class PetShopActions {
             default -> System.out.println("Sorry, we don't have that kind of animal");
         }
     }
+
+
 }
 

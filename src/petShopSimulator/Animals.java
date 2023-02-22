@@ -50,6 +50,7 @@ public class Animals {
         this.cats = cats;
     }
 
+
     public int getRabbits() {
         return rabbits;
     }
