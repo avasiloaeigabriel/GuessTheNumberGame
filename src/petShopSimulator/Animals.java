@@ -42,7 +42,7 @@ public class Animals {
         return dogs;
     }
 
-    public int getCats() {
+     public int getCats() {
         return cats;
     }
 
