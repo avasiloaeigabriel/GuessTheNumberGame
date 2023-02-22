@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PetShopActions {
 
+
     Animals animals = new Animals();
     private int quantity;
     private String userAnswerAnimalKind;

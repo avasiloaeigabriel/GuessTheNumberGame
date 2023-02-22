@@ -3,6 +3,7 @@ package petShopSimulator;
 import java.util.Scanner;
 
 public class petShopRunner {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Animals animals = new Animals();
